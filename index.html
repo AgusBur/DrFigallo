@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jose Figallo</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top colornav">
+      <div class="container-fluid">
+        <a class="navbar-brand textonav" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link textonav" aria-current="page" href="#aboutme">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link textonav" href="#foot">Contacto</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link textonav2">Dr. José Figallo</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Comienzo del carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carrusel">
+          <img src="assets/img/foto1.png" class="d-block w-100 imgcarru" alt="Foto incio">
+        </div>
+        <div class="carousel-item carrusel">
+          <img src="assets/img/foto2.png" class="d-block w-100 imgcarru" alt="Quote1">
+        </div>
+        <div class="carousel-item carrusel">
+          <img src="assets/img/foto3.png" class="d-block w-100 imgcarru" alt="Quote2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Comienzo de carta horizontal -->
+      <div class="card mb-8 fullcard" style="max-width: 1500px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img id="aboutme" src="assets/img/card.jpg" class="img-fluid rounded-start imgcardhorizontal" alt="fotodoc">
+          </div>
+          <div class="col-md-8 bodycardhorizontal">
+            <div class="card-body">
+              <h5 class="card-title titulocardhorizontal">Dr José Figallo</h5>
+              <p class="card-text textcardhorizontal">"Cirujano plástico. Especialista en cirugía estética, reparadora y reconstructiva"</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btncard" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Información
+                </button>
+                <ul class="dropdown-menu txtbtn">
+                  <li><a class="dropdown-item txtbtn" href="#">Formación</a></li>
+                  <li><a class="dropdown-item txtbtn" href="#">Actividad científica</a></li>
+                  <li><a class="dropdown-item txtbtn" href="#">CV completo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comienzo del footer -->
+
+    <footer id="foot" class="footer">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col textcolumna">
+            <ul class="list-unstyled">
+              <li class="ordenicono">
+                <p>Consultorio Las Heras, Salta</p>
+                <a href="https://www.google.com/maps/place/Las+Heras+1241,+A4400+Salta/@-24.7749099,-65.4040565,17z/data=!3m1!4b1!4m6!3m5!1s0x941bc3eb02a850f1:0x2a753d92be363851!8m2!3d-24.7749148!4d-65.4014816!16s%2Fg%2F11fm31td33?authuser=0&entry=ttu"><i class="fa-solid fa-location-dot icono"></i></a>
+                <span>Ubicación</span>
+              </li>
+              <li class="ordenicono">
+                <a href="#"><i class="fa-brands fa-whatsapp icono"></i></a>
+                <span>WhatsApp</span>
+              </li>
+              <li class="ordenicono">
+                <i class="fa-solid fa-phone icono"></i>
+                <span>387-4391177</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col textcolumna">
+            <ul class="list-unstyled">
+              <li class="ordenicono">
+                <p>Consultorio Rivadavia, Salta</p>
+                <a href="https://www.google.com/maps/place/Rivadavia+214,+A4400+Salta/@-24.7826418,-65.407805,17z/data=!3m1!4b1!4m6!3m5!1s0x941bc3be0f8f052d:0xb08017bff4eaa989!8m2!3d-24.7826467!4d-65.4052301!16s%2Fg%2F11fmt24hxw?authuser=0&entry=ttu"><i class="fa-solid fa-location-dot icono"></i></a>
+                <span>Ubicación</span>
+              </li>
+              <li class="ordenicono">
+                <a href="#"><i class="fa-brands fa-whatsapp icono"></i></a>
+                <span>WhatsApp</span>
+              </li>
+              <li class="ordenicono">
+                <i class="fa-solid fa-phone icono"></i>
+                <span>387-4220414</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col textcolumna">
+            <a href="https://www.instagram.com/dr.josefigallo/"><i class="fa-brands fa-instagram icono icono"></i></a>
+            <span>Instagram</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
