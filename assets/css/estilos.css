@@ -3,7 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,200;0,400;1,200&family=DM+Sans:wght@400;500;700&family=Noto+Serif+Armenian:wght@200;300;400&family=Noto+Serif+Display:ital,wght@0,200;0,400;1,200;1,400&display=swap');
 
 *{
-    font-family: 'Noto Serif Display', serif;;
+    font-family: 'Noto Serif Display', serif;
+}
+
+body{
+    background-color:#C6AC8F;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 25px;
+    color: #E4E2D9;
 }
 
 .colornav{
@@ -11,17 +24,15 @@
 }
 
 .textonav{
-    color: beige;
+    color: #EAE0D5;
 }
 
-.textonav2{
-    color: beige;
-    text-align: center;
-    margin-left: 280pt;
+.textonav:hover{
+    color: #C6AC8F;
 }
 
 .carrusel{
-    height: 619px;
+    height: 620px;
 }
 
 .imgcarru{
@@ -29,69 +40,126 @@
     object-fit: cover;
 }
 
-.fullcard{
-    height: 570px;
-    background-color: #E4E2D9;
+/* Seccion de categoria */
+ 
+.index-category{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #C6AC8F;
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    flex-wrap: wrap;
 }
 
-.bodycardhorizontal{
-    background-color: #E4E2D9;
-}
-
-.imgcardhorizontal{
-    height: 570px;
-}
-
-.titulocardhorizontal{
-    color: #8C705F;
+.index-category p{
+    color: #E4E2D9;
     text-align: center;
-    margin-top: 120pt;
-    margin-bottom: 20pt;
-    font-size: 30pt;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
-.textcardhorizontal{
-    color: #8C705F;
-    text-align: center;
-    font-size: 18pt;
-    font-family: 'Noto Serif Armenian', serif;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.btncard{
-    padding: 8pt;
-    margin-left: 280pt;
-    margin-top: 20pt;
-    border-radius: 5pt;
-    background-color: #6D7588;
-    color: beige;
-    font-family: 'Noto Serif Armenian', serif;
-}
-
-.txtbtn{
-    background-color: #6D7588;
-    color: beige;
-    font-family: 'Noto Serif Armenian', serif;
-}
-
-.footer{
+.index-category-box{
+    width: 180px;
+    height: 180px;
     background-color: #8C705F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.icono{
-    color: beige;
-    font-size: 30px;
+.index-category-box:nth-child(2){
+    background-image: url(../img/mamas.JPG);
 }
 
-.textcolumna{
+.index-category-box:nth-child(3){
+    background-image: url(../img/nariz.JPG);
+}
+
+.index-category-box:nth-child(4){
+    background-image: url(../img/cuerpo.JPG);
+}
+
+.index-category-box:nth-child(5){
+    background-image: url(../img/labios.JPG);
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6D7588;
+    opacity: 0.3;
+    transition: all ease-in-out 200ms;
+}
+
+.index-category-box:hover .dark-overlay{
+    opacity: 0;
+}
+
+.index-category-box h3{
+    font-size: 22px;
+    line-height: 28px;
+    color: #E4E2D9;
+    z-index: 100;
     font-family: 'Noto Serif Armenian', serif;
-    color: beige;
-    margin-top: 20pt;
-    margin-bottom: 10pt;
+    text-shadow: -2px 2px 4px #8C705F;
 }
 
-.ordenicono{
-    align-items: first baseline;
-    margin-top: 10pt;
+
+/* Columnas de bootstrap */
+
+.todobst{
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0908;
+    align-items:center;
+    justify-content: center;
+}
+
+.containerbts{
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    background-color: #0A0908;
+    column-gap: 150px;
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.imagenbst img{
+    width: 300px;
+    border-radius: 300px;
+}
+
+.textobst h2{
+    font-size: 28px;
+    color: #E4E2D9;
+}
+
+.textobst p{
+    padding: 20px 0;
+}
+
+.abst a{
+    margin-top: 30px;
+    color: #E4E2D9;
+    text-shadow: -2px 2px 4px #8C705F;
+    font-family: 'Noto Serif Armenian', serif; 
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #C6AC8F;
+    padding: 0 20px;
+    width: fit-content;
+    border-radius: 10px;
 }
