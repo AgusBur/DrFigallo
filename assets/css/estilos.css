@@ -50,6 +50,7 @@ p{
     justify-content: center;
     column-gap: 25px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .index-category p{
@@ -71,6 +72,7 @@ p{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 40px;
 }
 
 .index-category-box:nth-child(2){
@@ -115,30 +117,40 @@ p{
 
 
 /* Columnas de bootstrap */
-
+/* ASI SE ALINEA EL CONTENEDOR! Como está abajo! */
 .todobst{
     display: flex;
     flex-direction: column;
     background-color: #0A0908;
     align-items:center;
     justify-content: center;
+    padding: 25px;
 }
 
 .containerbts{
-    width: 100%;
-    padding: 0%;
     display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
     background-color: #0A0908;
-    column-gap: 150px;
-    margin: 10px;
+    margin: 15px;
+}
+
+.imagenbst{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    padding: 30px;
+    justify-content: center; 
 }
 
 .imagenbst img{
     width: 300px;
     border-radius: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .textobst h2{
@@ -151,15 +163,63 @@ p{
 }
 
 .abst a{
-    margin-top: 30px;
-    color: #E4E2D9;
-    text-shadow: -2px 2px 4px #8C705F;
+    margin: 30px;
+    color: #8C705F;
     font-family: 'Noto Serif Armenian', serif; 
     font-size: 18px;
     height: 30px;
     line-height: 30px;
-    background-color: #C6AC8F;
-    padding: 0 20px;
+    background-color: #E5E5DC;
+    padding: 0 12px;
     width: fit-content;
-    border-radius: 10px;
+    border-radius: 6px;
+    column-gap: 5px;
+}
+
+.boton{
+    background-color: #8C705F;
+    color: #E4E2D9;
+    font-family: 'Noto Serif Armenian', serif;
+}
+
+.boton-general{
+    background-color: #8C705F;
+}
+
+.cada-boton{
+    color: #E4E2D9;
+    font-family: 'Noto Serif Armenian', serif;
+}
+
+/* COMIENZO FOOTER */
+
+.foot{
+    background-color: #0A0908;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5DC;
+    padding: 20px;
+}
+
+.footer-div{ 
+    padding: 40px;
+    color: #27211d;
+    background-color: #E5E5DC;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-div a{
+    color: #27211d;
+    font-family: 'Noto Serif Armenian', serif;
+
 }
